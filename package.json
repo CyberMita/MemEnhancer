@@ -1,5 +1,5 @@
 {
-  "name": "st-context-enhancer",
+  "name": "MemEnhancer",
   "version": "1.0.0",
   "dependencies": {
     "openai": "^4.15.0"

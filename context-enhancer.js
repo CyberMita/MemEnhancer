@@ -4,7 +4,7 @@ const fs = require('fs/promises');
 const path = require('path');
 
 module.exports = {
-  name: 'Context Enhancer',
+  name: 'MemEnhancer',
   author: 'Your Name',
   version: '1.0.0',
   description: '通过AI提取关键词并结合本地JSON文件增强对话上下文',

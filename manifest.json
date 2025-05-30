@@ -1,0 +1,12 @@
+{
+  "name": "MemEnhancer",
+  "display_name": "MemEnhancer",
+  "version": "1.0.0",
+  "author": "YourName",
+  "description": "A SillyTavern extension to enhance context.",
+  "requirements": [],
+  "tags": ["utility", "context"],
+  "type": "extension",
+  "entry_script": "MemEnhancer.js",
+  "settings": []
+}
