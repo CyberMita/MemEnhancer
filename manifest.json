@@ -2,11 +2,26 @@
   "name": "MemEnhancer",
   "display_name": "MemEnhancer",
   "version": "1.0.0",
-  "author": "YourName",
-  "description": "A SillyTavern extension to enhance context.",
+  "author": "CyberMita",
+  "description": "通过AI提取关键词并结合本地JSON文件增强对话上下文",
   "requirements": [],
   "tags": ["utility", "context"],
   "type": "extension",
   "entry_script": "MemEnhancer.js",
-  "settings": []
+  "settings": [
+    {
+      "id": "apiKey",
+      "type": "string",
+      "label": "AI API Key",
+      "placeholder": "输入你的AI服务API密钥（如OpenAI Key）",
+      "required": true
+    },
+    {
+      "id": "apiBaseUrl",
+      "type": "string",
+      "label": "AI API 地址",
+      "placeholder": "输入兼容OpenAI的API基础地址",
+      "default": "https://api.openai.com/v1"
+    }
+  ]
 }
