@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = {
   name: 'MemEnhancer',
-  author: 'Your Name',
+  author: 'CyberMita',
   version: '1.0.0',
   description: '通过AI提取关键词并结合本地JSON文件增强对话上下文',
   
