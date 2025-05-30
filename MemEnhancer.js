@@ -33,6 +33,41 @@ module.exports = {
           }
         ]
       });
+      // 渲染自定义UI
+    register.render('customUI', (container) => {
+      container.innerHTML = `
+        <div class="mem-enhancer-settings">
+          <h3>MemEnhancer 设置</h3>
+          <div class="setting-item">
+            <label for="apiKey">API Key:</label>
+            <input type="password" id="apiKey" placeholder="输入API密钥">
+            <div class="error" id="apiKeyError"></div>
+          </div>
+          <div class="setting-item">
+            <label for="apiBaseUrl">API 地址:</label>
+            <input type="text" id="apiBaseUrl" placeholder="输入API地址" value="https://api.openai.com/v1">
+          </div>
+          <button id="saveSettings">保存设置</button>
+        </div>
+      `;
+      
+      // 添加事件监听器
+      document.getElementById('saveSettings').addEventListener('click', async () => {
+        const apiKey = document.getElementById('apiKey').value;
+        const apiBaseUrl = document.getElementById('apiBaseUrl').value;
+        
+        // 验证API Key
+        if (!apiKey) {
+          document.getElementById('apiKeyError').textContent = 'API Key不能为空';
+          return;
+        }
+        
+        // 保存设置
+        await app.setSettings('MemEnhancer', { apiKey, apiBaseUrl });
+        app.log(`[${this.name}] 设置已保存`);
+      });
+    });
+
       
       // 读取插件配置（使用register获取用户设置值）
       const settings = await app.getSettings('MemEnhancer');
