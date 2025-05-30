@@ -1,0 +1,39 @@
+/* style.css */
+
+/* 定义设置面板的样式 */
+.mem-enhancer-settings {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.mem-enhancer-settings h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mem-enhancer-settings .setting-item {
+  margin-bottom: 15px;
+}
+
+.mem-enhancer-settings label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.mem-enhancer-settings input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.mem-enhancer-settings .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
