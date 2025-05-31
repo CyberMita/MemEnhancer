@@ -1,0 +1,49 @@
+<!-- You might want to add additional HTML elements to ST. 
+    It's good practice to separate it out from your code -->
+<div class="memenhancer-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>MemEnhancer Settings</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="memenhancer_block flex-container">
+                <label for="memenhancer_api_url">API URL:</label>
+                <input id="memenhancer_api_url" type="text" placeholder="Enter OpenAI-compatible API URL" />
+            </div>
+
+            <div class="memenhancer_block flex-container">
+                <label for="memenhancer_model_name">Model Name:</label>
+                <input id="memenhancer_model_name" type="text" placeholder="Enter model name" />
+            </div>
+
+            <div class="memenhancer_block flex-container">
+                <label for="memenhancer_api_key">API Key:</label>
+                <input id="memenhancer_api_key" type="password" placeholder="Enter API key" />
+            </div>
+
+            <hr class="sysHR" />
+        </div>
+    </div>
+</div>
+
+<div class="example-extension-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Extension Example</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="example-extension_block flex-container">
+                <input id="my_button" class="menu_button" type="submit" value="Example Button" />
+            </div>
+
+            <div class="example-extension_block flex-container">
+                <input id="example_setting" type="checkbox" />
+                <label for="example_setting">This is an example</label>
+            </div>
+
+            <hr class="sysHR" />
+        </div>
+    </div>
+</div>

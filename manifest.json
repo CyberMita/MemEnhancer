@@ -3,10 +3,9 @@
     "loading_order": 9,
     "requires": [],
     "optional": [],
-    "js": "MemEnhancer.js",
+    "js": "index.js",
     "css": "style.css",
-    "author": "CyberMita",
-    "version": "1.0.0",
-    "homePage": "",
-    "description": "通过AI提取关键词并结合本地JSON文件增强对话上下文"
+    "author": "CyberMita", 
+    "version": "1.0.0",    
+    "homePage": "https://github.com/CyberMita/MemEnhancer" 
 }
